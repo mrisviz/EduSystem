@@ -1,0 +1,997 @@
+.sfu2011 {
+  display: none !important;
+}
+/************************* TEMP FIX MAIN CSS *************************/
+/* версия для слабовидящих */
+#special-panel {
+  display: none;
+}
+/* ajax autocomplete */
+div#autocomplete {
+  background: white;
+}
+/* стиль для отключенной кнопки пропкрутки объявлений, новых материалов и проч. */
+.tools-item.disabled {
+  opacity: 0.1;
+  cursor: default !important;
+}
+/* overlay */
+#special-overlay.inverted-overlay {
+  background: white;
+}
+#special-overlay.inverted-overlay #overlay-spinner .overlay-spinner-dot {
+  background: #ff6600;
+}
+#special-overlay.inverted-overlay #overlay-spinner .overlay-spinner-line {
+  background: rgba(255, 102, 0, 0.5);
+}
+.text {
+  /* чтобы поля не растягивали страницу, особенно в мобильных версиях */
+  /* отступ сверху лидов новостей и в мобильных версиях */
+  /* выделение строчных цитат <q> в текстах */
+  /* разрешить переносы в подписях к фото */
+  /* отступы после списком больше */
+  /* фикс вложенных списков */
+  /* ol с круглой скобкой */
+  /* фикс жирного выделения в стандартном выводе cck-полей */
+  /* фикс выделения меток в формах */
+  /* убрать лишние маркеры у списков в представлениях */
+}
+.text input,
+.text textarea {
+  max-width: 100%;
+}
+.text .lead {
+  padding-top: 1em;
+  /* отступ у картинки в тизере/лиде новости */
+}
+@media (min-device-height:992px) and (orientation:landscape), screen and (min-device-width: 992px) {
+  .text .lead .image-right,
+  .text .lead .image-left {
+    margin-top: -1em;
+  }
+}
+.text q {
+  font-style: italic !important;
+  font-weight: bold;
+  color: #5f8a96;
+}
+.text q:before,
+.text q:after {
+  content: "";
+}
+.text blockquote {
+  overflow: hidden;
+}
+.text blockquote.light,
+.text blockquote.teal,
+.text blockquote.orange {
+  font-style: normal;
+}
+.text blockquote.teal strong,
+.text blockquote.orange strong,
+.text blockquote.teal b,
+.text blockquote.orange b,
+.text blockquote.teal small,
+.text blockquote.orange small,
+.text blockquote.teal h3,
+.text blockquote.orange h3,
+.text blockquote.teal dt,
+.text blockquote.orange dt,
+.text blockquote.teal q,
+.text blockquote.orange q {
+  color: white;
+}
+.text blockquote.light q {
+  color: #5f8a96;
+}
+.text blockquote.quotation p:last-of-type {
+  margin-bottom: 0px;
+}
+.text blockquote h3 {
+  margin-top: 25px;
+}
+.text blockquote h3:first-of-type {
+  margin-top: 0px;
+}
+.text .image-wrap .image-title {
+  white-space: normal;
+}
+.text ul,
+.text ol {
+  margin-bottom: 1.8em;
+}
+.text a.external:before,
+.text a.external2:after {
+  content: "";
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 21px;
+  height: 16px;
+  position: relative;
+  top: 6px;
+  border-bottom: 2px solid white;
+  margin-top: -2px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiM1RjhBOTYiIGQ9Ik0xMC40NjcgNi40NjdMNi40NyAxMC40NjIgMi40NTcgNi40NDhsMy45OTYtMy45OTZMNCAwaDl2OWwtMi41MzMtMi41MzN6TTExIDJINy45M2wuNzQ0Ljc0Ni0zLjcwMiAzLjcwMiAxLjUzNiAxLjUzNUwxMC4yMSA0LjI4bC43OS43OVYyek0yLjk1OCA0SDJ2N2g3VjkuOTVsMi0xLjg5VjEzSDBWMmg1LjA0NkwyLjk1OCA0eiIvPjwvc3ZnPg==) 50% 50% no-repeat;
+}
+.mz-no-svg .text a.external:before,
+.mz-no-svg .text a.external2:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALhJREFUeNpiZEAD8V3T5gOpBAY8gAldYGFZViKQWoBPEwvQ5P9oYheAOBCIA4BYAIgPAHEjVG4/WBOahgVQBeuhGj4AcSHQ9gtQpzOgaAJKMAIFBaCmGUA1OII0AMVBftSHOw8pAPBpmI8rIAqgGkBgIhYNDzA0ARU1IIVaPTToYRoWAOUVYfJMeII7AUlDItSQhSA+oXiCaTgPMwTEZ8IWeVCNiVCaAcmvGKH3H0eSIpyMiAEAAQYAFaZPKbALGXkAAAAASUVORK5CYII=);
+}
+.text a abbr,
+.text a b,
+.text a strong {
+  color: #ff6600 !important;
+}
+.text a abbr:before,
+.text a abbr:after {
+  border: none !important;
+}
+.text a:visited abbr,
+.text a:visited b,
+.text a:visited strong {
+  color: #feb794 !important;
+}
+.text a.no-link {
+  text-decoration: none;
+  color: #333 !important;
+  border: 0;
+}
+.text a.action {
+  border-bottom: 1px dotted #ff9f77;
+}
+.text a.action:hover,
+.text a.action:active {
+  border-bottom: 1px dotted #ff8777;
+}
+.text a.link-photo,
+.text a.link-video,
+.text a.link-text,
+.text a.link-file,
+.text a.link-outside {
+  display: inline-block;
+  margin-bottom: 0.75em;
+}
+.text ul.attachments {
+  margin-left: 0;
+}
+.text ul.attachments li.link-photo:before,
+.text ul.attachments li.link-video:before,
+.text ul.attachments li.link-text:before,
+.text ul.attachments li.link-file:before,
+.text ul.attachments li.link-outside:before {
+  left: -5px;
+  top: 0;
+}
+.text ul.attachments li.link-bullet {
+  margin-left: 23px;
+}
+.text ul li.link-photo:before,
+.text ul li.link-video:before,
+.text ul li.link-text:before,
+.text ul li.link-file:before,
+.text ul li.link-outside:before {
+  border: 0;
+}
+.text .poll .bar {
+  background: #f4f4f4;
+  height: 22px;
+}
+.text .poll .bar .foreground {
+  background: #f60;
+  height: 22px;
+}
+.text img {
+  display: inline-block;
+}
+.text ol {
+  /* ol вложенный в ol без иерархической нумерации типа 10.5 */
+  /* ol с русскими буквами и круглой скобкой */
+}
+.text ol.subCounter {
+  list-style-type: none;
+  counter-reset: subCounter !important;
+}
+.text ol.subCounter > li:before {
+  content: counter(subCounter) ') ' !important;
+  counter-increment: subCounter;
+  width: 33px;
+  text-align: right;
+  position: absolute;
+  margin-left: -40px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.text ol.plainCounter > li:before {
+  content: counter(point2) ".";
+}
+.text ol.cyrillic,
+.text ol.cyrilic {
+  list-style-type: none;
+  position: relative;
+}
+.text ol.cyrillic > li:before,
+.text ol.cyrilic > li:before {
+  width: 33px;
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  margin-left: -40px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.text ol.cyrillic > li:nth-child(1)::before,
+.text ol.cyrilic > li:nth-child(1)::before {
+  content: "а)";
+}
+.text ol.cyrillic > li:nth-child(2)::before,
+.text ol.cyrilic > li:nth-child(2)::before {
+  content: "б)";
+}
+.text ol.cyrillic > li:nth-child(3)::before,
+.text ol.cyrilic > li:nth-child(3)::before {
+  content: "в)";
+}
+.text ol.cyrillic > li:nth-child(4)::before,
+.text ol.cyrilic > li:nth-child(4)::before {
+  content: "г)";
+}
+.text ol.cyrillic > li:nth-child(5)::before,
+.text ol.cyrilic > li:nth-child(5)::before {
+  content: "д)";
+}
+.text ol.cyrillic > li:nth-child(6)::before,
+.text ol.cyrilic > li:nth-child(6)::before {
+  content: "е)";
+}
+.text ol.cyrillic > li:nth-child(7)::before,
+.text ol.cyrilic > li:nth-child(7)::before {
+  content: "ж)";
+}
+.text ol.cyrillic > li:nth-child(8)::before,
+.text ol.cyrilic > li:nth-child(8)::before {
+  content: "з)";
+}
+.text ol.cyrillic > li:nth-child(9)::before,
+.text ol.cyrilic > li:nth-child(9)::before {
+  content: "и)";
+}
+.text ol.cyrillic > li:nth-child(10)::before,
+.text ol.cyrilic > li:nth-child(10)::before {
+  content: "к)";
+}
+.text ol.cyrillic > li:nth-child(11)::before,
+.text ol.cyrilic > li:nth-child(11)::before {
+  content: "л)";
+}
+.text ol.cyrillic > li:nth-child(12)::before,
+.text ol.cyrilic > li:nth-child(12)::before {
+  content: "м)";
+}
+.text ol.cyrillic > li:nth-child(13)::before,
+.text ol.cyrilic > li:nth-child(13)::before {
+  content: "н)";
+}
+.text ol.cyrillic > li:nth-child(14)::before,
+.text ol.cyrilic > li:nth-child(14)::before {
+  content: "о)";
+}
+.text ol.cyrillic > li:nth-child(15)::before,
+.text ol.cyrilic > li:nth-child(15)::before {
+  content: "п)";
+}
+.text ol.cyrillic > li:nth-child(16)::before,
+.text ol.cyrilic > li:nth-child(16)::before {
+  content: "р)";
+}
+.text ol.cyrillic > li:nth-child(17)::before,
+.text ol.cyrilic > li:nth-child(17)::before {
+  content: "с)";
+}
+.text ol.cyrillic > li:nth-child(18)::before,
+.text ol.cyrilic > li:nth-child(18)::before {
+  content: "т)";
+}
+.text ol.cyrillic > li:nth-child(19)::before,
+.text ol.cyrilic > li:nth-child(19)::before {
+  content: "у)";
+}
+.text ol.cyrillic > li:nth-child(20)::before,
+.text ol.cyrilic > li:nth-child(20)::before {
+  content: "ф)";
+}
+.text ol.cyrillic > li:nth-child(21)::before,
+.text ol.cyrilic > li:nth-child(21)::before {
+  content: "х)";
+}
+.text ol.cyrillic > li:nth-child(22)::before,
+.text ol.cyrilic > li:nth-child(22)::before {
+  content: "ц)";
+}
+.text ol.cyrillic > li:nth-child(23)::before,
+.text ol.cyrilic > li:nth-child(23)::before {
+  content: "ч)";
+}
+.text ol.cyrillic > li:nth-child(24)::before,
+.text ol.cyrilic > li:nth-child(24)::before {
+  content: "ш)";
+}
+.text ol.cyrillic > li:nth-child(25)::before,
+.text ol.cyrilic > li:nth-child(25)::before {
+  content: "щ)";
+}
+.text ol.cyrillic > li:nth-child(26)::before,
+.text ol.cyrilic > li:nth-child(26)::before {
+  content: "э)";
+}
+.text ol.cyrillic > li:nth-child(27)::before,
+.text ol.cyrilic > li:nth-child(27)::before {
+  content: "ю)";
+}
+.text ol.cyrillic > li:nth-child(28)::before,
+.text ol.cyrilic > li:nth-child(28)::before {
+  content: "я)";
+}
+.text .field .field-label {
+  color: #5f8a96;
+  font-weight: 800;
+}
+.text .form-item label,
+.text .form-item label b,
+.text .form-item label strong {
+  color: #333;
+  font-weight: 700;
+}
+.text .form-item label.option {
+  font-weight: normal;
+}
+.text .item-list ul li {
+  list-style: none;
+}
+/* отступ в pager-е */
+nav.pages {
+  margin-top: 1.5em;
+}
+/* футер пропускает плавающие элементы */
+footer#footer {
+  clear: both;
+}
+/* левое меню */
+.block .side-menu-items ul {
+  padding: 0;
+}
+.block .side-menu-items li.leaf,
+.block .side-menu-items li.expanded,
+.block .side-menu-items li.collapsed {
+  padding: 0;
+}
+#side-menu .block,
+#side-menu .side-menu-items,
+#side-menu .side-menu-additional {
+  margin-bottom: 35px;
+}
+#side-menu .block h3 {
+  display: none;
+}
+#side-menu.expanded .side-menu-additional h3 {
+  display: block;
+}
+@media -desktop {
+  #side-menu.expanded .block h3 {
+    display: block;
+  }
+}
+#side-menu .side-menu-additional ul {
+  padding: 0;
+}
+#side-menu .side-menu-additional p {
+  margin: 0 0 1em 0;
+}
+/* меню целевых аудиторий на главной */
+#fast-nav .active .item-link span {
+  text-decoration: underline;
+}
+#fast-nav .active .item-link:hover span {
+  color: #ff6000;
+}
+/* градиент внизу на главной у объявлений и новых материалов */
+#home-ads-items,
+#home-updates-items {
+  position: relative;
+}
+#home-ads-items:before,
+#home-updates-items:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: -moz-linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+}
+#home-ads-items:before {
+  margin-left: 60px;
+}
+#home-announcements-items {
+  /* фикс иконки внешней ссылки на место проведения у анонсов на главной */
+}
+#home-announcements-items a.external2:after {
+  display: none;
+}
+/* фикс кнопок прокрутки на главной */
+#home-announcements .control-prev.disabled,
+#home-announcements .control-next.disabled {
+  visibility: visible;
+}
+/* фикс кнопок прокрутки галерей */
+.gallery-slider .control-prev.disabled,
+.gallery-slider .control-next.disabled,
+.gallery-slider .control-prev.disabled:hover,
+.gallery-slider .control-next.disabled:hover,
+.gallery-slider .control-prev.disabled:active,
+.gallery-slider .control-next.disabled:active {
+  visibility: visible;
+}
+#news {
+  /* фикс вывода даты в ленте анонсов (ширина может быть больше, чем 60px) */
+  /* установка макс. ширины картинки в ленте новостей */
+}
+#news .news-item-date {
+  min-width: 46px;
+  /* 60 - 2*padding */
+  width: auto;
+  padding: 0px 7px;
+}
+#news .news-item-image img {
+  max-width: 480px;
+}
+#videogallery-item {
+  /* иначе появляется прокрутка у таблицы */
+  /* скрытие второй строки у рейтинга с кол-вом голосов */
+}
+#videogallery-item-tools li:before {
+  background: none;
+}
+#videogallery-item-tools li a {
+  border: none;
+}
+#videogallery-item .videogallery-item {
+  /* список видео */
+  /* фикс описания видео */
+  /* убрать оранжевую рамку у авторов */
+}
+#videogallery-item .videogallery-item-spec {
+  display: table;
+}
+#videogallery-item .videogallery-item-title {
+  margin-top: 20px !important;
+}
+#videogallery-item .videogallery-item-description {
+  margin-bottom: 30px;
+}
+#videogallery-item .videogallery-item-authors caption {
+  border: none;
+}
+#videogallery-item .fivestar-widget .description {
+  display: none;
+}
+#videogallery-item .video-contents {
+  margin-bottom: 30px;
+  /* фикс оглавления */
+}
+#videogallery-item .video-contents h3 {
+  margin-top: 0px;
+}
+/* фикс ссылок на соцсети у видео */
+.cut-block {
+  clear: both;
+}
+.cut-block #bottom-tools {
+  border-top: none;
+  margin-top: 0;
+  position: relative;
+  top: -28px;
+}
+.cut-block #bottom-tools .items {
+  float: right;
+}
+/* в поступлении на главной фикс ссылок на контакты */
+#admission-related-contacts .items {
+  padding-bottom: 5px;
+  padding-left: 3px;
+}
+/* в верхнем меню курсор меняем на руку, даже если пункт уже активен */
+#main-menu .item .current .item-link,
+#main-menu .subitem .current .item-link,
+#main-menu .item .current .item-link:hover,
+#main-menu .subitem .current .item-link:hover,
+#main-menu .item .current .item-link:active,
+#main-menu .subitem .current .item-link:active {
+  cursor: pointer;
+}
+/* главная страница магистратуры (фикс текстового блока взамен ссылок) */
+.magisters-page #admission-related-links,
+.admission-content-no-links #admission-related-links {
+  color: #333 !important;
+  font-size: 14px !important;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 0.8em;
+}
+.magisters-page #admission-related-links h2,
+.admission-content-no-links #admission-related-links h2 {
+  color: #5d8995;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 100%;
+  margin-top: 30px !important;
+}
+.magisters-page #admission-how-to,
+.admission-content-no-links #admission-how-to {
+  padding-top: 0px;
+}
+@media (min-device-height:992px) and (orientation:landscape), screen and (min-device-width: 992px) {
+  .magisters-page #admission-how-to,
+  .admission-content-no-links #admission-how-to {
+    padding-top: 30px !important;
+  }
+}
+/* выделение текущего пункта в выпадающих хлебных крошках (скопировано из стилей главного меню) */
+#breadcrumbs .subitem.active .subitem-link {
+  color: #fff;
+  background: #ff6000;
+  background: -moz-linear-gradient(45deg, #ff8700 0%, #ff6000 100%);
+  background: -webkit-linear-gradient(45deg, #ff8700 0%, #ff6000 100%);
+  background: linear-gradient(135deg, #ff8700 0%, #ff6000 100%);
+}
+#breadcrumbs .subitem.active .subitem-link:hover,
+#breadcrumbs .subitem.active .subitem-link:active {
+  background: #ffb912;
+  background: -moz-linear-gradient(45deg, #ffb912 0%, #ff9300 100%);
+  background: -webkit-linear-gradient(45deg, #ffb912 0%, #ff9300 100%);
+  background: linear-gradient(135deg, #ffb912 0%, #ff9300 100%);
+}
+#breadcrumbs .subitem.active .subitem-link:active {
+  opacity: 0.5;
+}
+/* iframe на всю ширину страницы */
+.iframe-full {
+  position: relative;
+}
+.iframe-full > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.iframe-full iframe,
+.iframe-full > div {
+  border: none;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* несколько ol с единой нумерацией */
+.singleCounter {
+  counter-reset: point;
+}
+.singleCounter > ol {
+  counter-reset: none !important;
+}
+/* фикс яндекс-карт */
+.YMaps img {
+  max-width: none;
+}
+.YMaps table {
+  margin: 0;
+  background: transparent;
+}
+.YMaps a {
+  border: none !important;
+}
+.YMaps strong,
+.YMaps b {
+  color: inherit !important;
+}
+.YMaps .YMaps-b-balloon-content {
+  max-width: 300px !important;
+}
+/************************* LINKS *************************/
+/* normal */
+.text a.no-visited,
+.text .no-visited a,
+.block a.no-visited,
+.block a.no-visited:visited,
+.block .no-visited a,
+.block .no-visited a:visited,
+a.action {
+  color: #ff6600;
+  border-color: #ff9f77;
+}
+/* active */
+a.no-visited:hover,
+.no-visited a:hover,
+a.no-link:hover,
+a.no-link:hover em,
+.text a:hover small,
+.text a:active small,
+a.action:hover,
+a.action:active {
+  color: #ff3300 !important;
+  border-color: #ff8777 !important;
+}
+.text a:hover abbr,
+.text a:active abbr,
+.text a:hover b,
+.text a:hover strong,
+.text a:active b,
+.text a:active strong {
+  color: #ff3300 !important;
+}
+/* active topbar */
+#topbar a:hover small,
+#topbar a:active small {
+  color: #ff6000;
+  border-color: #ff6000;
+}
+/************************* SPEECH BROWSERS *************************/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/************************* COLLAPSED *************************/
+.collapsed-block > * {
+  display: none;
+}
+.collapsed-block > a {
+  display: inline;
+}
+/************************* BUEDITOR *************************/
+.editor-text-button,
+.editor-image-button {
+  border-color: white;
+  font-weight: normal;
+}
+.editor-popup td.close a {
+  text-decoration: none;
+}
+/************************* TEXT TAGS *************************/
+h3 abbr,
+h4 abbr,
+h5 abbr,
+h6 abbr {
+  color: black !important;
+  border-color: black;
+}
+small {
+  font-size: 90%;
+  line-height: 130%;
+  color: #888;
+}
+/************************* TEXT CLASSES *************************/
+.clear {
+  clear: both;
+}
+.nobr {
+  white-space: nowrap;
+}
+.updated {
+  margin-left: 2px;
+  background: #ff8700;
+  color: white;
+  padding: 1px 5px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+img.left {
+  margin-left: 0;
+}
+img.right {
+  margin-right: 0;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+a.marked {
+  padding-left: 17px;
+  background: url(../img/marked.png)/*tpa=http://about.sfu-kras.ru/sites/all/themes/sfu2016/img/marked.png*/ no-repeat 0px 4px;
+  border: none !important;
+}
+a.marked span.marked-title {
+  border-bottom: 1px solid #f60;
+}
+a.marked:visited span.marked-title {
+  border-color: #feb794;
+}
+a.marked:hover span.marked-title,
+a.marked:active span.marked-title {
+  border-color: #ff8777;
+}
+/************************* DRUPAL ELEMENTS *************************/
+.body .node {
+  clear: both;
+}
+.node-unpublished {
+  background: #FFDFDF;
+}
+.tabs {
+  margin-bottom: 1em;
+}
+.tabs a,
+.tabs a:hover {
+  text-decoration: none;
+  font-weight: normal;
+}
+.tabs a,
+.tabs a:visited {
+  color: #333;
+  border-color: #bbb;
+}
+.messages {
+  background-color: #D4F7D4;
+  border: 1px solid #b8d3e5;
+  padding: 1em 0.7em 0.7em 0.7em !important;
+  margin: 0.3em 0em 1em 0em !important;
+}
+.messages ul {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+form fieldset {
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc !important;
+  padding: 0.5em 1em;
+}
+form fieldset.collapsed {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+form fieldset legend a {
+  text-decoration: none;
+  border: 0 !important;
+}
+form .form-submit {
+  margin-top: 1em;
+}
+form .form-submit#edit-delete {
+  float: right;
+}
+.node-form .tabs li:before,
+ul.tabs.primary li:before {
+  display: none;
+}
+.node-form .tabs,
+ul.tabs.primary {
+  margin: 0;
+}
+.tabledrag-handle {
+  border: 0 !important;
+}
+/************************* MENU *************************/
+.mi-external {
+  background: url(../img/external.png)/*tpa=http://about.sfu-kras.ru/sites/all/themes/sfu2016/img/external.png*/ no-repeat;
+  width: 10px;
+  height: 13px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  white-space: nowrap;
+  margin-left: 4px;
+}
+/************************* COMMENTS ************************/
+.comment {
+  padding: 1.5em 2em 1.5em 0;
+  border-top: 1px solid #e9eff3;
+}
+.comment .new {
+  color: #ffae00;
+  font-size: 0.92em;
+  font-weight: bold;
+  float: right;
+  margin: 3px 5px;
+}
+.comment.comment-unpublished {
+  background: #FAE4E8;
+}
+/************************* TABS2 *************************/
+/* compatibiliy */
+.tabs2 {
+  display: block;
+  height: 40px;
+  margin: 0 0 30px 0;
+  padding-bottom: 10px;
+  background: #f4f4f4;
+}
+.tabs2 a {
+  display: none;
+}
+.tabs-page,
+.tabs2-page {
+  display: none;
+}
+.tabs-page.active,
+.tabs2-page.active {
+  display: block;
+}
+/* single tab = button */
+.tabs-single,
+.tabs-items {
+  background: transparent !important;
+}
+.tabs-single:after,
+.tabs-items:after {
+  display: none !important;
+}
+.tabs-single {
+  margin: 0 !important;
+  background: transparent !important;
+}
+/************************* TABLES *************************/
+.table {
+  /* tables in tables */
+}
+.table-center,
+.table-center td,
+.table-center th {
+  text-align: center !important;
+}
+.table td.light {
+  background: #f0f0f0 !important;
+}
+.table td.highlight,
+.table tr.highlight {
+  background: #FFFF99 !important;
+}
+.table-hover tr:hover td,
+.table-select tr:hover td {
+  background: #FFFF99 !important;
+}
+.table-select tr:hover td {
+  cursor: pointer;
+}
+.table tr.selected td {
+  background: orange !important;
+}
+.table table th,
+.table table td {
+  border: none;
+  padding: 0;
+}
+/* аналог старого sub2 */
+.text table .heading-subsection th {
+  text-transform: uppercase;
+  background: #bbb;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 2px solid #bbb;
+  border-color: #bbb;
+}
+.text table .heading-subsection th:last-child {
+  border-right-color: #bbb;
+}
+/* убрать 2px нижнюю границу */
+.text table .heading-section.heading-alone th {
+  border-bottom: 1px solid #f60;
+}
+/* фикс цвета жирного и маленького текста в таблицах на тёмном фоне */
+.text .table th strong,
+.text .table th b,
+.text .table th small {
+  color: white;
+}
+/* убрать block у small */
+.text table td small {
+  display: inline;
+}
+/* убрать рамки у таблиц без класса table */
+.text table:not(.table) th,
+.text table:not(.table) td,
+.text table:not(.table) tr.odd,
+.text table:not(.table) tr.odd td {
+  border: 0;
+  /*background: white;*/
+  color: #333;
+}
+.view table:not(.table) th,
+.view table:not(.table) tr.odd td {
+  background: white;
+}
+/* цвет в таблицах */
+.table th a,
+.text form table:not(.table) th {
+  color: white;
+}
+/* вертикальное выравнение в таблицах */
+.table-valign-top td,
+.table-valign-top th {
+  vertical-align: top !important;
+}
+.highslide-zoom-icon {
+  display: none;
+}
+.gallery-slider,
+.gallery {
+  margin: 0 !important;
+}
+.gallery h2,
+.gallery h3,
+.gallery h4 {
+  margin-left: 10px;
+}
+.pswp__button.pswp__button--src,
+.pswp__button.pswp__button--dl {
+  background-position: -176px 0px !important;
+  display: none;
+}
+.pswp__button.pswp__button--info {
+  background-position: -176px -44px !important;
+  display: none;
+}
+.text a.image-inside {
+  border: none;
+}
+img.image-bordered {
+  padding: 1px;
+  border: 2px solid #f4f4f4;
+}
+#bottom-tools .vkontakte-like {
+  float: right;
+  margin-top: 5px;
+}
+a.feed-icon {
+  display: none;
+}
+/************************* FOREIGN *************************/
+.non-ru-page .footer-top,
+.non-ru-page #sintonika {
+  display: none;
+}
+/************************* VIEW *************************/
+.view #views-filters input#edit-submit {
+  margin: 0;
+}
+.view #views-filters table {
+  margin-bottom: 0;
+}
+.view #views-filters td,
+.view #views-filters th {
+  padding-left: 0;
+}
+/************************* NETWORKS links *************************/
+#topbar li.link-vk:before,
+#topbar li.link-lj:before,
+#topbar li.link-twitter:before,
+#topbar li.link-instagram:before,
+#topbar li.link-facebook:before,
+#topbar li.link-rss:before {
+  background-size: 19px 19px;
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+}

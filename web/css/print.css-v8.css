@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* Стили для печати */
+/* print_ */
+@media print {
+    * {
+        background: none !important;
+        color: #000 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        filter: Gray();
+        filter: grayscale(100%);
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href="#"], a[href="javascript:"] {
+        content: "";
+    }
+}
+/* _print */

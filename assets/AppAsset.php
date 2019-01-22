@@ -21,9 +21,20 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/node.css',
+        'css/defaults.css',
+        'css/system.css',
+        'css/user.css',
+        'css/style_.css-v8.css',
+        'css/style.css-v8.css',
+        'css/legacy.css-v8.css',
+        'css/print.css-v8.css',
+        'js/lib/photoswipe/photoswipe.css',
+        'js/lib/photoswipe/default-skin/default-skin.css',
     ];
     public $js = [
     ];
+    public $jsOptions = ['position' =>  \yii\web\View::POS_HEAD];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
