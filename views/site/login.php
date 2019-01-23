@@ -7,24 +7,23 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Login';
+$this->title = 'Вход';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="site-login col-lg-4 col-lg-offset-4 col-sm-12">
+    <h1 class="page-title"><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
 
     <?php $form = ActiveForm::begin([
         'id' => 'login-form',
         'layout' => 'horizontal',
         'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-1 control-label'],
+            'template' => "{label}\n<div class=\"col-lg-12\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
+            'labelOptions' => ['class' => 'col-lg-3 control-label'],
         ],
     ]); ?>
 
-        <?= $form->field($model, 'username')->input('text',['id'=>'yii']) ?>
+        <?= $form->field($model, 'mail')->input('mail',['id'=>'yii']) ?>
 
         <?= $form->field($model, 'password')->passwordInput() ?>
 

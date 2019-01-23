@@ -9,6 +9,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -55,15 +56,12 @@ AppAsset::register($this);
                   </noindex>
                </ul>
             </nav>
-            <form id="header-search" name="header-search" action="http://search.sfu-kras.ru/" method="get">
-               <input type="search" name="q" id="header-search-query" autocomplete="on" spellcheck="true" autocapitalize="off" autocorrect="off" required="required" maxlength="140">
-               <label for="header-search-query">Поиск</label>
-               <input type="hidden" name="lang" value="ru">
-               <input type="hidden" name="domain" value="about.sfu-kras.ru">
-               <button type="submit" class="button" title="Найти">
-               <span class="button-title">Найти</span>
-               </button>
-            </form>
+                <?php if(Yii::$app->user->isGuest): ?>
+                    <div class="login-div">
+                        <a href="<?= Url::to(['site/login']) ?>" class="my-btn">Вход</a>
+                        <a href="<?= Url::to(['site/registration']) ?>" class="my-btn">Регистрация</a>
+                    </div>
+                <?php endif; ?>
          </div>
          <script>
             var flagsoiacl = false;
